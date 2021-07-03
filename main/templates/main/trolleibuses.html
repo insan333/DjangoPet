@@ -1,0 +1,16 @@
+{% extends 'main/main.html' %}
+{% block content %}
+{% for trolleibus in trolleibuss %}
+<div class="col-3">
+    <div class="card" style="width:20em;">
+        <a href="http://localhost:8000/trolleibus{{ trolleibus.id }}/">
+            <div class="card-body">
+                <p class="card-text">Номер Маршрута:{{trolleibus.murshrut_number}}</p>
+                <p class="card-text">Маршрут:{{trolleibus.murshrut}}</p>
+            </div>
+        </a>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock content %}

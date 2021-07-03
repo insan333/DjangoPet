@@ -1,0 +1,9 @@
+{% extends 'main/main.html' %}
+{% block content %}
+<p class="card-text">Номер Маршрута:{{trolleibuss.murshrut_number}}</p>
+<p class="card-text">Маршрут:{{trolleibuss.murshrut}}</p>
+<p class="card-text">Вместимость:{{trolleibuss.capacity}}</p>
+<p class="card-text">Цена:{{trolleibuss.price}}</p>
+<p class="card-text">Время начала маршрута:{{trolleibuss.start_work}}</p>
+<p class="card-text">Время конца маршрута:{{trolleibuss.stop_work}}</p>
+{% endblock content %}

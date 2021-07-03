@@ -1,0 +1,16 @@
+{% extends 'main/main.html' %}
+{% block content %}
+{% for sprinter in sprinters %}
+<div class="col-3">
+    <div class="card" style="width:20em;">
+        <a href="http://localhost:8000/sprinter{{ sprinter.id }}/">
+            <div class="card-body">
+                <p class="card-text">Номер Маршрута:{{sprinter.murshrut_number}}</p>
+                <p class="card-text">Маршрут:{{sprinter.murshrut}}</p>
+            </div>
+        </a>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock content %}

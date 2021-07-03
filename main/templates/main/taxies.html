@@ -1,0 +1,16 @@
+{% extends 'main/main.html' %}
+{% block content %}
+{% for taxi in taxis %}
+<div class="col-3">
+    <div class="card" style="width:20em;">
+        <a href="http://localhost:8000/taxi{{ taxi.id }}/">
+            <div class="card-body">
+                <p class="card-text">Компания:{{taxi.company}}</p>
+                <p class="card-text">Тип:{{taxi.option}}</p>
+            </div>
+        </a>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock content %}
